@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>I'm alive!</h1>
-</body>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=c57c5973-ce36-41eb-aa96-1da2ff2e5cdc&lang=en_US;"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <form>
+      <p>
+        <input
+          type="text"
+          class="input-box"
+          autofocus
+          required
+          placeholder="City name"
+        />
+      </p>
+      <input type="submit" value="Show weather" id="show" class="show" />
+      <div class="invalid-search-message"></div>
+      <p class="search-history"></p>
+    </form>
+    <div id="map" style="width: 600px; height: 400px"></div>
+    <script type="module" src="src\scripts\index.js"></script>
+  </body>
 </html>
