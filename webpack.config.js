@@ -6,7 +6,7 @@ const { resolve } = require('node:path');
 const mode = process.env.NODE_ENV;
 
 module.exports = {
-  entry: { main: '.srcscriptsindex.js' },
+  entry: { main: './src/scripts/index.js' },
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js',
